@@ -18,7 +18,6 @@ public class Server {
         BufferedWriter bufferedWriter;
         ServerSocket serverSocket;
 
-
         try{
             //Kontrollera att Socket nummer är ledig. Avbryt om socket är upptagen
             serverSocket = new ServerSocket(4321);
@@ -27,8 +26,6 @@ public class Server {
             System.out.println(e);
             return;
         }
-
-
 
         try {
             //Väntar på specifik socket efter trafik
@@ -53,8 +50,6 @@ public class Server {
                 bufferedWriter.write(returnData);
                 bufferedWriter.newLine();
                 bufferedWriter.flush();
-
-
 
                 //Avsluta om QUIT
                 if(message.equalsIgnoreCase("quit")){
@@ -92,6 +87,10 @@ public class Server {
 
         //Steg 2.5. Dela upp URL med .split() metod
         String[] urls = url.split("/");
+
+        for(int i = 0; i < urls.length; i++){
+            System.out.println(urls[i]);
+        }
 
         //Steg 3. Använd en SwitchCase för att kolla vilken data som skall användas
         switch (urls[0]) {

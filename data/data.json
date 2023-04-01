@@ -1,0 +1,23 @@
+{
+  "p1": {
+    "id": 1,
+    "name":"Tarek",
+    "age":24,
+    "favoriteColor":"Red",
+    "data":[1, 2, 3, 4, 5]
+  },
+  "p2": {
+    "id": 2,
+    "name":"Mason",
+    "age":35,
+    "favoriteColor":"Blue",
+    "data":["a", "b", "c", "d", "e"]
+  },
+  "p3": {
+    "id": 3,
+    "name":"Lion",
+    "age":40,
+    "favoriteColor":"Green",
+    "data":["a", "b", "c", "d", "e"]
+  }
+}
